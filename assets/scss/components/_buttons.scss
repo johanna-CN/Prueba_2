@@ -1,0 +1,51 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+// .btn {
+//     cursor: pointer;
+//     display: block;
+//     padding: 1rem;
+//     // width: 100%;
+//     text-align: center;
+//     text-decoration: none;
+
+//     &--primary {
+//         background-color: v.$white;
+//         border: 1px solid v.$black;
+//         opacity: .3;
+//         @include m.transition(opacity);
+
+//         &:hover {
+//             opacity: unset;
+//         }
+//     }
+//     &--secondary {
+//         background-color: v.$shinyShamrock;
+//         border: 1px solid transparent;
+//         color: v.$white;
+//         @include m.transition( ( opacity, color ) );
+
+//         &:hover {
+//             opacity: .6;
+//             color: v.$black;
+//         }
+//     }
+// }
+
+
+// button {
+//     width: 100%;
+
+//     @include m.tablet {
+//         width: 8rem;
+//     }
+// }
+
+.link {
+    opacity: .3; 
+    @include m.transition(opacity);
+
+    &:hover {
+        opacity: unset;
+    }
+}

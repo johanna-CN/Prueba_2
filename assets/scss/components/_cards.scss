@@ -1,0 +1,19 @@
+@use "../abstracts/variables" as v;
+
+.card {
+    background: transparent;
+    
+    &-body {
+        background-color: v.$blanco;
+        color: v.$oscuro;
+    }
+    &-title {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    img {
+        height: 100%;
+        object-fit: cover;
+    }
+}

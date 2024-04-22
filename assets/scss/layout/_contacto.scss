@@ -1,0 +1,25 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+/* CONTACTO */
+
+.contacto {
+    color: v.$blanco;
+    padding: 7rem 0 3rem 0;
+
+    &__texto {
+        display: none;
+
+        @include m.telefono {
+            display: block;
+        }
+    }
+
+    i {
+        width: 1.5rem;
+    }
+    
+    span {
+        text-decoration: underline;
+    }
+}

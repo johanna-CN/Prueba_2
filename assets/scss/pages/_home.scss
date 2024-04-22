@@ -1,0 +1,27 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+/* NOSOTROS */
+.nosotros {
+    padding-top: v.$separacion;
+}
+
+.tarjeta {
+    color: v.$blanco;
+}
+.tarjeta__icon {
+    background-color: v.$secundario;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .3rem 0;
+}
+.tarjeta__icon i {
+    font-size: 2.5rem;
+}
+
+
+/* DESTACADOS */
+.destacados {
+    padding: v.$separacion 0;
+}

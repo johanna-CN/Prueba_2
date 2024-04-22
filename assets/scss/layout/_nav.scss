@@ -1,0 +1,22 @@
+@use "../abstracts/mixins" as m;
+
+.navbar {
+    &-logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 4rem;
+
+        p {
+            font-size: 2rem;
+        }
+    }
+
+    &-toggler-icon {
+        font-size: 1.6rem;
+    }
+    &-collapse {
+        justify-content: flex-end;
+    }
+}

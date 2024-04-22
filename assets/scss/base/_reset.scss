@@ -1,0 +1,61 @@
+@use "../abstracts/variables" as v;
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body {
+    font-family: v.$fuentePrincipal;
+    font-size: 1.6rem;
+    background-color: v.$primario;
+}
+a {
+    text-decoration: none;
+    color: v.$oscuro;
+}
+ul {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0 0 v.$separacion 0;
+    // text-transform: uppercase;
+    color: v.$blanco;
+}
+
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3.6rem;
+    font-weight: 400;
+    padding-bottom: 3rem;
+    border-bottom: 2px solid v.$blanco;
+    // border-bottom: 2px solid rgba(255, 255, 255, .2);
+    // width: 90%;
+    margin: 0 auto v.$separacion auto;
+}
+h3 {
+    font-size: 3.2rem;
+}
+
+// p {
+//     font-family: v.$fuenteSecundaria;
+//     margin-top: 0;
+// }
+// .contenedor {
+//     // max-width: 128rem;
+//     width: 95%;
+//     margin: 0 auto;
+// }

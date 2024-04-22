@@ -1,0 +1,32 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.formulario {
+    &__contenido {
+        label {
+            color: v.$blanco;
+        }
+        input,
+        textarea {
+            padding: 1rem;
+            font-size: 1.6rem;
+        }
+
+        span {
+            cursor: pointer;
+        }
+    }
+    &__btn button {
+        // background-color: v.$blanco;
+        color: v.$oscuro;
+        font-size: 1.6rem;
+        padding: .5rem 1rem;
+        width: 7rem;
+
+        &:hover {
+            // background-color: v.$blanco;
+            opacity: .8;
+            color: v.$oscuro;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+
+
+// .navbar-logo {
+
+// }
+
+// .navbar-logo img {
+//     height: 4rem;
+// }
+
+// .navbar-logo p {
+//     font-size: 2rem;
+// }
+
+// .navbar-toggler-icon  {
+//     font-size: 1.6rem;
+// }
+
+// .navbar-collapse {
+//     justify-content: flex-end;
+// }
+
+.carousel-item {
+    img {
+        width: 100%;
+        max-height: 30rem;
+        object-fit: cover;
+
+        @include m.tablet {
+            max-height: 50rem;
+        }
+    }
+}
